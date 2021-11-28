@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <style>
+        video{
+        object-fit: fill;
+        position: fixed;
+        right:0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -9999;
+        -webkit-filter:grayscale(60%)
+    }
+    div{
+			position: relative;
+		}
+        h1{font-size: 32px;
+			color: blanchedalmond;
+			position:absolute;
+			top:250px;
+			left: 780px;
+            top: 50px;}
+        h22{font-size: 32px;
+			color: white;
+			position:absolute;
+			top:250px;
+			left: 780px;
+            top: 100px;}
+    </style>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="live2d/css/live2d.css"/>
+<title>一个主页</title>
+</head>
+<body>
+    <video id="background" autoplay muted loop style="width: 100%">
+        <source src="video/1.mp4">
+    </video>
+<div>
+    
+    <h1>我在这里！</h1>
+    <h2 style="font-size: 32px;
+    color: white;
+    position:absolute;
+    top:250px;
+    left: 780px;
+    top: 90px;">我是竑也酱！</h2>
+    <a  style="font-size: 32px;
+    color: red;
+    position:absolute;
+    top:250px;
+    left: 780px;
+    top: 160px;" href="https://github.com/hongye-L">这是我的GitHub链接！</a>
+    <h2 style="font-size: 32px;
+    color: white;
+    position:absolute;
+    top:250px;
+    left: 760px;
+    top: 190px;">对了，左下角那个蕾姆可以点哦！</h2>
+</div>
+    <div id="landlord">
+        <div class="message" style="opacity:0"></div>
+        <canvas id="live2d" width="280" height="250" 
+        class="live2d"></canvas>
+    </div>
+    <script type="text/javascript" src="live2d/jquery.js"></script>
+    <script type="text/javascript">
+        var message_Path = '/live2d/'
+        var home_Path = 'http://120.78.197.226:8080/' 
+    </script>
+    <script type="text/javascript" src="live2d/js/live2d.js"></script>
+    <script type="text/javascript" src="live2d/js/message.js"></script>
+    <script type="text/javascript">
+        loadlive2d("live2d", "live2d/model/remu/11.json");
+    </script>
+</body>
+</html>
